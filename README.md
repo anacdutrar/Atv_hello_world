@@ -1,7 +1,7 @@
 # Atv_hello_world
 
 Projeto de exemplo para ESP32-S3 que executa um modelo TensorFlow Lite Micro
-quantizado. O firmware alimenta o modelo com valores de entrada, realiza uma
+quantizado que foi passado por um fine-tunning em um colab. O firmware alimenta o modelo com valores de entrada, realiza uma
 inferência a cada 500 ms e imprime os valores de entrada e saída no monitor
 serial.
 
@@ -20,6 +20,7 @@ serial.
 - `dependencies.lock`: versões resolvidas das dependências
 - `diagram.json` e `wokwi.toml`: configuração da simulação no Wokwi
 - `.devcontainer/`: ambiente de desenvolvimento opcional em contêiner
+- `main/model_data`: identificação do modelo pós-finetunning
 
 As pastas `build/` e `managed_components/` são geradas automaticamente e não
 são versionadas.
